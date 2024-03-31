@@ -852,4 +852,18 @@ span.single-timeline-horizontal.spacial-horizontal-line {width: 88px;}
     0%   {bottom:0px;}
     100%  {bottom:7px;}
 }
+
+.zoom {
+    padding: 0px;
+    transition: transform .2s;
+    margin: 0 auto;
+    position: relative; 
+    z-index: 1; 
+  }
+  
+  .zoom:hover {
+    transform: scale(1.5);
+    z-index: 2; 
+  }
+  
 /*========================Thank you=================
