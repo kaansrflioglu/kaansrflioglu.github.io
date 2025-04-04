@@ -1,1124 +1,287 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kaan Şereflioğlu</title>
-
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" type="image/icon" href="https://cdn-icons-png.flaticon.com/512/4727/4727424.png" />
-
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
-
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kaan Şereflioğlu</title>
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/10856/10856864.png" type="image/x-icon" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
 <body>
-
-  <!--
-    - #MAIN
-  -->
-
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/avatar.jpg" width="80" style="border-radius: 5%;">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name">Kaan Şereflioğlu</h1>
-
-          <p class="title">Bilgisayar Mühendisi</p>
+    <!--Navbar Start-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <!--<a class="navbar-brand" href="/"></a>-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="/">Hakkımda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/experience/">Deneyim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/projects/">Projeler</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/certifications/">Sertifikalar</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/contact/">Bana Ulaş</a>
+                    </li>
+                </ul>
+            </div>
         </div>
+    </nav>
+    <!--Navbar End-->
 
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Bilgileri Göster</span>
 
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
-      </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
+    <div class="container text-center mt-1">
+        <div class="bg-white shadow p-5">
+            <div class="row">
+                <div class="col-12 col-lg-4">
+                    <img src="./assets/images/avatar.jpg" class="index-img mb-3">
+                    <h2 class="fw-bold">Kaan Şereflioğlu</h2>
+                    <p class="text-muted">Bilgisayar Mühendisi | Yazılım Geliştirici | Eğitmen</p>
+                </div>
+                <div class="col-12 col-lg about gap-2">
+                    <div class="row" style="gap: 20px 25px;">
+                        <div class="col-bg about about-top gap-2">
+                            <a href="mailto:kaansereflioglu@hotmail.com" target="_blank"
+                                class="btn btn-outline-danger d-flex justify-content-center gap-2">
+                                <span class="material-icons"> mail </span>
+                                <span class="d-none d-lg-block">Mail</span>
+                            </a>
+                            <a href="tel:+905349666480" target="_blank"
+                                class="btn btn-outline-secondary d-flex justify-content-center gap-2">
+                                <span class="material-icons"> call </span>
+                                <span class="d-none d-lg-block">Telefon</span>
+                            </a>
+                            <a href="./assets/CV.pdf" target="_blank"
+                                class="btn btn-outline-success d-flex justify-content-center gap-2">
+                                <span class="material-icons"> file_present </span>
+                                <span class="d-none d-lg-block">CV</span>
+                            </a>
+                        </div>
+                        <div class="col-bg about gap-2">
+                            <a href="https://www.linkedin.com/in/kaansereflioglu/" target="_blank"
+                                class="btn btn-outline-info d-flex justify-content-center gap-2">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-linkedin">
+                                        <path
+                                            d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                                    </svg>
+                                </span>
+                                <span class="d-none d-lg-block">LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/kaansrflioglu" target="_blank"
+                                class="btn btn-outline-dark d-flex justify-content-center gap-2">
+                                <span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-github">
+                                        <path
+                                            d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                                    </svg>
+                                </span>
+                                <span class="d-none d-lg-block">GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:richard@example.com" class="contact-link">kaansereflioglu@hotmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Telefon</p>
-
-              <a href="tel:+12133522795" class="contact-link">+90 (534) 966-64-80</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Doğum Tarihi</p>
-
-              <time datetime="1982-06-23">10 Ocak, 2001</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Konum</p>
-
-              <address>Düzce, Türkiye</address>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="document-attach-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Öz Geçmiş</p>
-
-              <a href="assets/download/CV.pdf" class="contact-link" target="_blank">CV</a>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="https://www.linkedin.com/in/kaansereflioglu/" class="social-link" target="_blank">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="https://github.com/kaansrflioglu" class="social-link" target="_blank">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>Hakkımda</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Deneyim</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Projeler</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Sertifikalar</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Bana Ulaş</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="hakkımda">
-
-        <header>
-          <h2 class="h2 article-title">Hakkımda</h2>
-        </header>
-
-        <section class="about-text">
-          <p style="text-align: justify;">
-            Bilgisayar mühendisi olarak, yenilikçi ve tutkulu bir yaklaşımla bilgisayar bilimi ve
-            yazılım geliştirme alanındaki en son trendleri yakından izliyorum. Bu alandaki
-            gelişmeleri öğrenmek için sürekli bir çaba içerisindeyim. Kendi yaratıcılığımı ve
-            problem çözme yeteneklerimi geliştirmek için sürekli eğitim alıyorum ve yeni
-            teknolojileri keşfetmek ile kullanmak konusunda büyük bir heyecan duyuyorum. İleri düzey
-            analitik düşünme yeteneklerimle birlikte, projelerimde ve Ar-Ge çalışmalarımda en iyi
-            sonuçları elde etmek için kararlılıkla ilerliyorum.
-          </p>
-        </section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">Ne yapıyorum?</h3>
-
-          <ul class="service-list">
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/web.png" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Web uygulamaları</h4>
-
-                <p class="service-item-text">
-                  Çeşitli teknolojiler ile fullstack uygulamalar.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/back-end.png" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Back-End Geliştirme</h4>
-
-                <p class="service-item-text">
-                  Java, Nodejs, ASP.NET dillerinde yazılmış back-end servisleri.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/windows.png" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Windows Uygulamaları</h4>
-
-                <p class="service-item-text">
-                  C# ya da Python kullanılarak oluşturulmuş windows uygulamaları.
-                </p>
-              </div>
-
-            </li>
-
-            <li class="service-item">
-
-              <div class="service-icon-box">
-                <img src="./assets/images/egitmen.png" width="40">
-              </div>
-
-              <div class="service-content-box">
-                <h4 class="h4 service-item-title">Bilişim Eğitmenliği</h4>
-
-                <p class="service-item-text">
-                  Ortaokul ve Lise çağındaki öğrencilere bilişim eğitmenliği.
-                </p>
-              </div>
-
-            </li>
-
-          </ul>
-
-        </section>
-
-        <!--
-          - clients
-        -->
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Eğitim</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Düzce Üniversitesi</h4>
-
-              <span>2020 — 2024</span>
-
-              <p class="timeline-text">
-                Bilgisayar Mühendisliği
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Farabi Anadolu Lisesi</h4>
-
-              <span>2015 — 2019</span>
-
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="clients">
-
-          <h3 class="h3 clients-title">Teknolojiler</h3>
-
-          <ul class="clients-list has-scrollbar">
-
-            <li class="clients-item">
-              <img src="./assets/images/technologies/java.png" alt="Java" height="128px">
-            </li>
-
-            <li class="clients-item">
-              <img src="./assets/images/technologies/node-js.png" alt="Node.js" height="128px">
-            </li>
-
-            <li class="clients-item">
-              <img src="./assets/images/technologies/python.png" alt="Python" height="128px">
-            </li>
-
-            <li class="clients-item">
-              <img src="./assets/images/technologies/c-pp.png" alt="C++" height="128px">
-            </li>
-
-            <li class="clients-item">
-              <img src="./assets/images/technologies/c-sharp.png" alt="C#" height="128px">
-            </li>
-
-            <li class="clients-item">
-              <img src="./assets/images/technologies/aspnet.png" alt="C#" height="128px">
-            </li>
-
-            <li class="clients-item">
-              <img src="./assets/images/technologies/react.png" alt="React" height="128px">
-            </li>
-
-            <li class="clients-item">
-              <img src="./assets/images/technologies/maven.png" alt="Maven" height="128px">
-            </li>
-
-            <li class="clients-item">
-              <img src="./assets/images/technologies/spring.png" alt="Spring Boot" height="128px">
-            </li>
-
-            <li class="clients-item">
-              <img src="./assets/images/technologies/pytorch.png" alt="PyTorch" height="128px">
-            </li>
-
-            <li class="clients-item">
-              <img src="./assets/images/technologies/opencv.png" alt="OpenCV" height="128px">
-            </li>
-
-          </ul>
-
-        </section>
-
-
-
-      </article>
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="deneyim">
-
-        <header>
-          <h2 class="h2 article-title">Deneyim</h2>
-        </header>
-
-
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Deneyim</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-              <h3 class="h3 timeline-item-title">Deneyap Türkiye</h3>
-
-              <h4 class="timeline-item-title" style="color: gray;">Bilişim Teknolojileri Eğitmeni (Yarı Zamanlı)</h4>
-
-              <span>2023 Ekim — Halen</span>
-
-              <p class="timeline-text" style="text-align: justify;">
-                Deneyap Türkiye'de Yazılım Teknolojileri, Robotik
-                Kodlama,
-                Siber Güvenlik, Yapay Zeka, Malzeme Bilimi ve Mobil Programlama alanlarında
-                eğitmenlik
-                yaptım. Bu süre zarfında öğrencilere C++ programlama dili, akış diyagramları,
-                algoritmalar ve yazılımın temelleri, deneyap kart kullanımı, gömülü sistemler,
-                robotik,
-                etik hackleme, linux, malzeme bilimi, nanoteknoloji, bulanık mantık, yapay sinir
-                ağları,
-                makine öğrenmesi ve MIT App Inventor ile blok tabanlı mobil uygulama geliştirme gibi
-                konularda eğitimler verdim.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-              <h3 class="h3 timeline-item-title">Özgür Yazılım A.Ş.</h3>
-
-              <h4 class="timeline-item-title" style="color: gray;">Yazılım Stajyeri</h4>
-
-              <span>2024 Temmuz — 2024 Ağustos</span>
-
-              <p class="timeline-text" style="text-align: justify;">
-                Staj süresince, Java teknolojileri (Spring, Maven)
-                kullanarak web uygulamaları geliştirme tecrübesi edindim. Mevcut yazılım yapılarını
-                kavrayarak, bu yapılarla uyumlu şekilde yazılım geliştirdim. Bir takımın parçası
-                olarak,
-                çalışmalarla ilgili fikir üretme, paylaşma ve karşılıklı tartışma ile bu fikirleri
-                iyileştirme becerisi kazandım. Ayrıca, kendim yazmadığım kaynak kodlarının içine
-                dalıp,
-                yolumu kaybetmeden sorun çözme yetkinliğimi geliştirdim.
-              </p>
-
-            </li>
-
-            
-
-            <li class="timeline-item">
-              <h3 class="h3 timeline-item-title">I-Base Yazılım</h3>
-
-              <h4 class="timeline-item-title" style="color: gray;">Yazılım Stajyeri</h4>
-
-              <span>2023 Temmuz — 2023 Ağustos</span>
-
-              <p class="timeline-text" style="text-align: justify;">
-                Stajım sırasında Node.js, Java, JavaScript, Angular,
-                Ionic
-                ve Socket.io kullanarak çeşitli projeler geliştirdim. Sunucu uygulamaları, kullanıcı
-                ara
-                yüzleri ve mobil uygulamalar üzerinde çalıştım ve gerçek zamanlı veri iletimine
-                yönelik
-                çözümler geliştirdim.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="projeler">
-
-        <header>
-          <h2 class="h2 article-title">Projeler</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-            <li class="filter-item">
-              <button class="active" data-filter-btn>Hepsi</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Ön-Uç (Front-End)</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Arka-Uç (Back-End)</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Fullstack</button>
-            </li>
-
-            <li class="filter-item">
-              <button data-filter-btn>Windows Uygulaması</button>
-            </li>
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>Hepsi</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Arka-Uç (Back-End)</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Windows Uygulaması</button>
-              </li>
-
-            </ul>
-
-          </div>
-
-          <ul class="project-list">
-
-            <li class="project-item  active" data-filter-item data-category="fullstack">
-              <a href="https://github.com/kaansrflioglu/TaskApp" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/fullstack-2.png" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Görev Yönetim Uygulaması</h3>
-
-                <p class="project-category">Full Stack</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="fullstack">
-              <a href="https://github.com/kaansrflioglu/Stok-Takip-Web-App" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/node-js.png" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Stok Takip Web Uygulaması</h3>
-
-                <p class="project-category">Full Stack</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="windows uygulaması">
-              <a href="https://github.com/kaansrflioglu/HarfVeSayiBulmaOyunu" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/python.png" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Harf ve Sayı Bulma Oyunu</h3>
-
-                <p class="project-category">Windows Uygulaması</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="arka-uç (back-end)">
-              <a href="https://github.com/kaansrflioglu/Laboratory-Reporting-Backend" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/java.png" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Laboratuvar Raporlama</h3>
-
-                <p class="project-category">Arka-Uç (Back-End)</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="fullstack">
-              <a href="https://github.com/kaansrflioglu/Todo-App" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/fullstack.png" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Todo Uygulaması</h3>
-
-                <p class="project-category">Fullstack</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="windows uygulaması">
-              <a href="https://github.com/kaansrflioglu/RatioColorsOnTheImageWithPython" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/python.png" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Görsel Renk Dağılımı Analizörü</h3>
-
-                <p class="project-category">Windows Uygulaması</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="fullstack">
-              <a href="https://github.com/kaansrflioglu/Simple-Translate-Web-App" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/node-js.png" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Basit Çeviri Web Uygulaması</h3>
-
-                <p class="project-category">Fullstack</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="fullstack">
-              <a href="https://github.com/kaansrflioglu/Nodejs-ChatApp" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/node-js.png" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Basit Web Sohbeti Uygulaması</h3>
-
-                <p class="project-category">Fullstack</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="windows uygulaması">
-              <a href="https://github.com/kaansrflioglu/AssociationMembershipMenagementApp" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/c-sharp.png" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Dernek Üye Takibi Uygulaması</h3>
-
-                <p class="project-category">Windows Uygulaması</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="windows uygulaması">
-              <a href="https://github.com/kaansrflioglu/ClassificationAppWithPython" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/python.png" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Tıbbi Görüntü Sınıflandırıcı</h3>
-
-                <p class="project-category">Windows Uygulaması</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="windows uygulaması">
-              <a href="https://github.com/kaansrflioglu/Instagram-Auto-Post-Advanced" target="_blank">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/python.png" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Instagram Post Uygulaması</h3>
-
-                <p class="project-category">Windows Uygulaması</p>
-
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #BLOG
-      -->
-
-
-      <article class="blog" data-page="sertifikalar">
-
-        <header>
-          <h2 class="h2 article-title">Sertifikalar</h2>
-        </header>
-
-        <section class="blog-posts">
-      
-          <ul class="blog-posts-list">
-
-            <li class="blog-post-item">
-              <a href="#" class="open-modal">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/S-12.png" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <time>Ağustos, 2024</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">Spring Boot Workshop</h3>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#" class="open-modal">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/S-13.png" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <time>Ağustos, 2024</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">Docker Workshop</h3>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#" class="open-modal">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/S-01.png" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <time>Nisan, 2024</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">Nodejs Web Programlama</h3>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#" class="open-modal">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/S-02.png" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <time>Mayıs, 2024</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">İleri Seviye Java</h3>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#" class="open-modal">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/S-03.png" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <time>Kasım, 2022</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">Başlangıç Seviye Java ile Backend Web Development
-                  </h3>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#" class="open-modal">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/S-18.png" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <time>Ekim, 2024</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">React Revolution Build Modern Web Apps Workshop</h3>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#" class="open-modal">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/S-04.png" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <time>Mayıs, 2023</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">Başlangıç Seviye Frontend Web Development
-                  </h3>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#" class="open-modal">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/S-15.png" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <time>Eylül, 2024</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">Flutter Workshop</h3>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#" class="open-modal">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/S-16.png" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <time>Eylül, 2024</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">DevOps Jenkins Workshop</h3>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#" class="open-modal">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/S-17.png" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <time>Eylül, 2024</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">Rapid Web Design Bootstrap Workshop</h3>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#" class="open-modal">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/S-05.png" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <time>Mayıs, 2023</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">Uygulamalarla SQL Öğreniyorum</h3>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#" class="open-modal">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/S-06.png" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <time>Nisan, 2023</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">R Veri Bilimine Giriş</h3>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#" class="open-modal">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/S-07.png" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <time>Eylül, 2023</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">TÜBİTAK BİLGEM YTE Bootcamp 2023: Java Eğitimi
-                  </h3>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#" class="open-modal">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/S-08.png" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <time>Eylül, 2023</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">TÜBİTAK BİLGEM YTE Bootcamp 2023: Mikroservis Mimarileri
-                  </h3>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#" class="open-modal">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/S-09.png" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <time>Eylül, 2023</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">TÜBİTAK BİLGEM YTE Bootcamp 2023: Kullanıcı Deneyimi ve Kullanılabilirlik
-                  </h3>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#" class="open-modal">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/S-10.png" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <time>Nisan, 2024</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">Python'u Öğrenme</h3>
-                </div>
-              </a>
-            </li>
-
-            <li class="blog-post-item">
-              <a href="#" class="open-modal">
-                <figure class="blog-banner-box">
-                  <img src="./assets/images/S-11.png" loading="lazy">
-                </figure>
-                <div class="blog-content">
-                  <div class="blog-meta">
-                    <time>Mayıs, 2024</time>
-                  </div>
-                  <h3 class="h3 blog-item-title">LCW Akademi: Teknoloji ve Dijitalleşmeye Giriş</h3>
-                </div>
-              </a>
-            </li>
-
-          </ul>
-
-        </section>
-
-        <div id="image-modal" class="modal">
-          <span class="close">&times;</span>
-          <img class="modal-content" id="modal-image">
-       </div>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #CONTACT
-      -->
-
-      <article class="contact" data-page="bana ulaş">
-
-        <header>
-          <h2 class="h2 article-title">İletişim</h2>
-        </header>
-
-        <section class="contact-form">
-
-          <h3 class="h3 form-title">İletişim Formu</h3>
-
-          <form id="contactForm" class="form" data-form>
-
-            <div class="input-wrapper">
-              <input type="text" name="fullname" id="fullname" class="form-input" placeholder="İsim-Soyisim" required
-                data-form-input>
-              <input type="email" name="email" id="email" class="form-input" placeholder="Email Adresi" required
-                data-form-input>
-            </div>
-            <div class="input-full" style="width: 100%;">
-              <input type="text" name="subject" id="subject" class="form-input" placeholder="Konu" required
-                data-form-input>
-            </div>
-
-            <textarea name="message" id="message" class="form-input" placeholder="Mesajınız" required
-              data-form-input></textarea>
-
-            <button class="form-btn" type="button" id="sendMessage">
-              <ion-icon name="paper-plane"></ion-icon>
-              <span>Gönder</span>
-            </button>
-
-          </form>
-
-        </section>
-
-      </article>
-
+        </div>
     </div>
 
-  </main>
+    <div class="container mb-5">
+        <div class="bg-white shadow p-5 mt-3">
+            <h1>Hakkımda</h1>
+            <p style="text-align: justify;">
+                Bilgisayar mühendisi olarak, yenilikçi ve tutkulu bir yaklaşımla bilgisayar bilimi ve yazılım geliştirme
+                alanındaki en son trendleri yakından izliyorum. Bu alandaki gelişmeleri öğrenmek için sürekli bir çaba
+                içerisindeyim. Kendi yaratıcılığımı ve problem çözme yeteneklerimi geliştirmek için sürekli eğitim
+                alıyorum ve yeni teknolojileri keşfetmek ile kullanmak konusunda büyük bir heyecan duyuyorum. İleri
+                düzey analitik düşünme yeteneklerimle birlikte, projelerimde ve Ar-Ge çalışmalarımda en iyi sonuçları
+                elde etmek için kararlılıkla ilerliyorum.
+            </p>
+            <h1 class="mb-3">Ne Yapıyorum?</h1>
+            <div class="row justify-content-center" style="gap: 20px 25px;">
+                <div class="card custom-card shadow col-md-6 col-sm-12">
+                    <div class="d-flex align-items-center">
+                        <div class="me-3">
+                            <img src="./assets/images/backend.png" width="48" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4 class="m-0">Backend Geliştirme</h4>
+                            <p class="m-0"> Java (Spring Boot), C#, Node.js, ASP.NET</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card custom-card shadow col-md-6 col-sm-12">
+                    <div class="d-flex align-items-center">
+                        <div class="me-3">
+                            <img src="./assets/images/frontend.png" width="48" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4 class="m-0">Frontend Geliştirme</h4>
+                            <p class="m-0">React, JavaScript, CSS, Bootstrap</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card custom-card shadow col-md-6 col-sm-12">
+                    <div class="d-flex align-items-center">
+                        <div class="me-3">
+                            <img src="./assets/images/instructor.png" width="48" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4 class="m-0">Bilişim Eğitmenliği</h4>
+                            <p class="m-0">+1 Yıllık Tecrübe</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card custom-card shadow col-md-6 col-sm-12">
+                    <div class="d-flex align-items-center">
+                        <div class="me-3">
+                            <img src="./assets/images/management.png" width="48" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4 class="m-0">Veri Yönetimi</h4>
+                            <p class="m-0">MSSQL, SQLite, MySQL, JSON-Server, MongoDB</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card custom-card shadow col-md-6 col-sm-12">
+                    <div class="d-flex align-items-center">
+                        <div class="me-3">
+                            <img src="./assets/images/tools.png" width="48" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4 class="m-0">Araçlar</h4>
+                            <p class="m-0">Docker, Git</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card custom-card shadow col-md-6 col-sm-12">
+                    <div class="d-flex align-items-center">
+                        <div class="me-3">
+                            <img src="./assets/images/ai.png" width="48" class="img-fluid">
+                        </div>
+                        <div>
+                            <h4 class="m-0">Yapay Zeka</h4>
+                            <p class="m-0">Python, TensorFlow, PyTorch, OpenCV</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1 class="my-3">Teknolojiler</h1>
+            <div class="my-3">
+                <ul class="clients-list">
+                    <li class="clients-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/git/git-original.svg"
+                            alt="Git" height="128px">
+                    </li>
+                    <li class="clients-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/docker/docker-original.svg"
+                            alt="Docker" height="128px">
+                    </li>
+                    <li class="clients-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/javascript/javascript-original.svg"
+                            alt="JavaScript" height="128px">
+                    </li>
+                    <li class="clients-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/python/python-original.svg"
+                            alt="Python" height="128px">
+                    </li>
+                    <li class="clients-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/nodejs/nodejs-original-wordmark.svg"
+                            alt="Node.js" height="128px">
+                    </li>
+                    <li class="clients-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/java/java-original.svg"
+                            alt="Java" height="128px">
+                    </li>
+                    <li class="clients-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/react/react-original.svg"
+                            alt="React" height="128px">
+                    </li>
+                    <li class="clients-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/spring/spring-original.svg"
+                            alt="Spring Boot" height="128px">
+                    </li>
+                    <li class="clients-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/dotnetcore/dotnetcore-original.svg"
+                            alt=".NET Core" height="128px">
+                    </li>
+                    <li class="clients-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/cplusplus/cplusplus-original.svg"
+                            alt="C++" height="128px">
+                    </li>
+                    <li class="clients-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/csharp/csharp-original.svg"
+                            alt="C#" height="128px">
+                    </li>
+                    <li class="clients-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/tensorflow/tensorflow-original.svg"
+                            alt="TensorFlow" height="128px">
+                    </li>
+                    <li class="clients-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/pytorch/pytorch-original.svg"
+                            alt="PyTorch" height="128px">
+                    </li>
+                    <li class="clients-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/opencv/opencv-original.svg"
+                            alt="OpenCV" height="128px">
+                    </li>
+                    <li class="clients-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/keras/keras-original.svg"
+                            alt="Keras" height="128px">
+                    </li>
+                    <li class="clients-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/r/r-original.svg"
+                            alt="R" height="128px">
+                    </li>
+                    <li class="clients-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/postman/postman-original.svg"
+                            alt="Postman" height="128px">
+                    </li>
+                    <li class="clients-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/maven/maven-original.svg"
+                            alt="Maven" height="128px">
+                    </li>
+                    <li class="clients-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/bootstrap/bootstrap-original.svg"
+                            alt="Bootstrap" height="128px">
+                    </li>
+                    <li class="clients-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/css3/css3-original.svg"
+                            alt="CSS" height="128px">
+                    </li>
+                    <li class="clients-item">
+                        <img src="https://raw.githubusercontent.com/devicons/devicon/refs/heads/master/icons/photoshop/photoshop-original.svg"
+                            alt="PhotoShop" height="128px">
+                    </li>
+                </ul>
 
+            </div>
+        </div>
+    </div>
 
-
-
-
-
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!--Footer Start-->
+    <footer class="footer mt-auto py-3 bg-light">
+        <div class="container text-center">
+            <span class="mb-3 mb-md-0 text-body-secondary">© 2025 Kaan Şereflioğlu</span>
+        </div>
+    </footer>
+    <!--Footer End-->
 
 </body>
 
