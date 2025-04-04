@@ -50,10 +50,6 @@ body {
     border-radius: 0;
 }
 
-.card-body {
-    max-height: 200px;
-}
-
 .card-text {
     max-height: 135px;
     overflow-y: auto;
@@ -209,6 +205,11 @@ body {
     opacity: 1;
 }
 
+.fa * {
+    height: 24px !important;
+    width: 24px !important;
+}
+
 @media (max-width: 991px) {
     nav {
         margin: 0 !important;
@@ -228,6 +229,12 @@ body {
     }
     .clients-item {
         min-width: 25%;
+    }
+}
+
+@media (max-width: 460) {
+    .card-text {
+        max-height: 50px !important;
     }
 }
 
